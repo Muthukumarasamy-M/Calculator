@@ -7,15 +7,18 @@ function clearDisplay() {
   display.value = "";
 }
 function calculate() {
-  try {
-    display.value = eval(display.value);
-  } catch (error) {
-    display.value = "Error";
-    setTimeout(() => {
-      display.value = "";
-    }, 1000);
+    try {
+      if (display.value.trim() !== "") {
+        display.value = eval(display.value);
+      }
+    } catch (error) {
+      display.value = "Error";
+      setTimeout(() => {
+        display.value = "";
+      }, 1000);
+    }
   }
-}
+  
 function Delete() {
   display.value = display.value.slice(0, -1);
 }

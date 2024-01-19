@@ -24,8 +24,8 @@ input {
   height: 70px;
   width: 260px;
   background-color: #ecf0f3;
-  box-shadow: inset -5px -5px 12px #ffffff;
-  border: none;
+  border: 2px solid #c7c4c4;
+  box-shadow: inset -5px -5px 16px #ffffff;
   border-radius: 30px;
   color: rgb(70, 70, 70);
   font-size: 50px;
